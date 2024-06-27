@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
 
         collect([
             [
-                'title' => 'A-B-C | Foo-Bar-Baz',
+                'title' => 'A => Foo | B => Bar | C => Baz',
                 'meta' => [
                     'a' => 'foo',
                     'b' => 'bar',
@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
                 ]
             ],
             [
-                'title' => 'A-B-C | NULL-NULL-NULL',
+                'title' => 'A => NULL | B => NULL | C => NULL',
                 'meta' => [
                     'a' => NULL,
                     'b' => NULL,
