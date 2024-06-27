@@ -13,5 +13,6 @@ class Post extends Model
 
     protected $casts = [
         'meta' => 'array',
+        // 'meta' => 'json',
     ];
 }
