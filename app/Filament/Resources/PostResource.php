@@ -87,14 +87,14 @@ class PostResource extends Resource
     {
         return [
             Forms\Components\Actions::make([
-                Forms\Components\Actions\Action::make('show')
+                Forms\Components\Actions\Action::make('clear')
+                    ->color('danger')
+                    ->action(fn(Set $set) => $set('meta', [])),
+                Forms\Components\Actions\Action::make('show result')
                     ->color('info')
                     ->action(function (Get $get) {
                         dump($get('meta'));
                     }),
-                Forms\Components\Actions\Action::make('clear')
-                    ->color('danger')
-                    ->action(fn (Set $set) => $set('meta', [])),
             ])->columnSpanFull(),
         ];
     }
