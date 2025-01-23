@@ -37,14 +37,14 @@ class DatabaseSeeder extends Seeder
                     'c' => NULL
                 ]
             ],
-            [
-                'title' => 'EMPTY ARRAY',
-                'meta' => []
-            ],
-            [
-                'title' => 'NULL',
-                'meta' => NULL
-            ],
-        ])->each(fn ($item) => Post::create($item));
+            // [
+            //     'title' => 'EMPTY ARRAY',
+            //     'meta' => []
+            // ],
+            // [
+            //     'title' => 'NULL',
+            //     'meta' => NULL
+            // ],
+        ])->each(fn($item) => Post::create($item));
     }
 }
